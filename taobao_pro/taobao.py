@@ -56,22 +56,16 @@ if __name__ == '__main__':
     
     dirver.find_element_by_xpath('//*[@id="J_SiteNavLogin"]/div[1]/div[1]/a[1]').click()
     print("login")
-    time.sleep(2)
     dirver.find_element_by_xpath('//*[@id="J_QRCodeLogin"]/div[5]/a[1]').click()
-    print("qiehuandengluming")  
-    time.sleep(2)
+    print("qiehuandengluming")
     dirver.find_element_by_xpath('//*[@id="TPL_username_1"]').clear()
     print("清空用户名")
-    time.sleep(1)
     dirver.find_element_by_xpath('//*[@id="TPL_password_1"]').clear()
     print("清空密码")
-    time.sleep(1)
     dirver.find_element_by_xpath('//*[@id="TPL_username_1"]').send_keys(USERNAME)
     print("输入用户名")
-    time.sleep(1)
     dirver.find_element_by_xpath('//*[@id="TPL_password_1"]').send_keys(PASSWORD)
     print("输入密码")
-    time.sleep(1)
     dirver.find_element_by_xpath('//*[@id="J_SubmitStatic"]').click()
     print("点击确定")
     time.sleep(2)
@@ -97,8 +91,13 @@ if __name__ == '__main__':
     # dirver.get('https://click.simba.taobao.com/cc_im?p=%B9%B6%C0%FB%B9%FA%BC%D2%C9%FA%CB%C0%D2%D1%C6%F1%D2%F2%B8%A3%BB%F6%B1%DC%C7%F7%D6%AE&s=584678424&k=577&e=qzPBbEd%2FmCpqXJDnZyXVXWXRE9qbZxfR1ukJ6FhRvRvyEcu%2FKKhWNwrYcIe06gvSfZDmKWqCg%2Bma5jpnnkl9NGKTOvW70ShgEsCi4%2BQyfA1rU6l9KpVerJV26usGLzXmxmdnPPlUBSRblNyXEt9oQOKI2YcUmjt5s%2FSQcYMnVMvJLPemqKrwrGIgmb1MJ856q1s1x3neHZisULK1ShclqQEiVoqkq7zOTHIVWTBk1UnhNm3yR6mX%2BhJMYfR2OLrYm2%2FQvs2wRD3CcaouDVN%2BlyQURnTDy4ngkZBfZQYv12oUD6QkqHGvN5ENI%2BLhf0BunbL%2B0avU1zOJM40%2BvOSUvCrfdMRqw0%2F3GFXVrrIk%2BcSqZsxY5hDrh878T0fyJmgT87sWwPSZXO3BNv2i5ayeMmPa6DceQHiO1OLsLkntjiMQfjalFWD1X1p7MA7DZt9cAv47GpDtff5c4jd0XKIz6bwS7280CvpxmbHb8l2uNCZ%2F44NMM0RLJAoA2uYdghhJoYC6tjfbRFKrbCgrPeQ3vlZcfkp1Nk0l%2BEox9AtgpxMG63%2B%2FplahwSZ916OOsS%2F%2B')
     # time.sleep(2)
     # dirver.find_element_by_xpath('//*[@id="J_AddFavorite"]').click()
-    
-    
+
+
+    # time.sleep(1)
+    # for i in range(10):
+    #     # 模拟浏览器跳转到最底
+    #     dirver.execute_script('window.scrollTo(0,document.body.scrollHeight)')
+    #     time.sleep(2)
     # dirver.find_element_by_xpath('//*[@id="J_LinkBasket"]').click()
     # dirver.find_element_by_xpath('').click()
 
